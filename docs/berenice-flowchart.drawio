@@ -232,7 +232,7 @@
         <mxCell id="-h-DdxfB7LTKWHT1O1mY-34" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;quantidade&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-407.7" y="1654" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-h-DdxfB7LTKWHT1O1mY-37" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;totalDeLimpeza &amp;lt;- totalDelimpeza + valorUnidade * quantidade&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="-h-DdxfB7LTKWHT1O1mY-37" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;totalEmLimpeza &amp;lt;- totalEmlimpeza + valorUnidade * quantidade&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-538.36" y="1582" width="330.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-h-DdxfB7LTKWHT1O1mY-40" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;quantidade &amp;lt;- 0&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
@@ -451,7 +451,7 @@
           <mxGeometry x="516.9699999999999" y="1521" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="y5LmSLrLWlJQxqjaBqhE-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="452.12" y="1577" width="291.88" height="50" as="geometry" />
+          <mxGeometry x="446.12" y="1577" width="304.88" height="50" as="geometry" />
         </mxCell>
         <mxCell id="y5LmSLrLWlJQxqjaBqhE-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="y5LmSLrLWlJQxqjaBqhE-6" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -541,7 +541,7 @@
         <mxCell id="y5LmSLrLWlJQxqjaBqhE-31" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;quantidade&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="564.2299999999999" y="1659" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="y5LmSLrLWlJQxqjaBqhE-32" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;totalDeAlimentos &amp;lt;- totalDeAlimentos + valorUnidade * quantidade&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="y5LmSLrLWlJQxqjaBqhE-32" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;totalEmAlimentos &amp;lt;- totalEmAlimentos + valorUnidade * quantidade&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="433.57" y="1587" width="330.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="y5LmSLrLWlJQxqjaBqhE-33" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;quantidade &amp;lt;- 0&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
@@ -872,7 +872,7 @@
         <mxCell id="h3HyLmKFvtXmSbTEe14R-28" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1002.74" y="2039.5" width="240" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-29" value="opcaoEscolhida = 31" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-29" value="opcaoEscolhida = 34" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1022.74" y="2078.5" width="193.2" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h3HyLmKFvtXmSbTEe14R-30" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;Informe a quantidade:&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
@@ -896,7 +896,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-35" value="valorUnidade &amp;lt;- 9.50" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-35" value="valorUnidade &amp;lt;- 8.50" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1319.98" y="2078" width="176.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h3HyLmKFvtXmSbTEe14R-36" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -913,10 +913,10 @@
         <mxCell id="h3HyLmKFvtXmSbTEe14R-39" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1002.74" y="2199.5" width="240" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-40" value="opcaoEscolhida = 32" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-40" value="opcaoEscolhida = 33" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1022.74" y="2238.5" width="193.2" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-41" value="valorUnidade &amp;lt;- 12.50" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-41" value="valorUnidade &amp;lt;- 1.90" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1321.6399999999999" y="2238" width="176.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h3HyLmKFvtXmSbTEe14R-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -933,10 +933,10 @@
         <mxCell id="h3HyLmKFvtXmSbTEe14R-45" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1002.4000000000001" y="2359.5" width="240" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-46" value="opcaoEscolhida = 33" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-46" value="opcaoEscolhida = 32" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1022.4" y="2398.5" width="193.2" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-47" value="valorUnidade &amp;lt;- 1.90" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-47" value="valorUnidade &amp;lt;- 12.50" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1321.6399999999999" y="2398" width="176.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h3HyLmKFvtXmSbTEe14R-48" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -951,10 +951,10 @@
         <mxCell id="h3HyLmKFvtXmSbTEe14R-51" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1003.8000000000001" y="2529.5" width="240" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-52" value="opcaoEscolhida = 34" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-52" value="opcaoEscolhida = 31" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1023.8000000000001" y="2568.5" width="193.2" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-53" value="valorUnidade &amp;lt;- 8.50" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-53" value="valorUnidade &amp;lt;- 9.50" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1321.24" y="2568" width="176.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h3HyLmKFvtXmSbTEe14R-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" edge="1">
@@ -1028,7 +1028,7 @@
         <mxCell id="h3HyLmKFvtXmSbTEe14R-69" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1089.34" y="2789.5" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-70" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;C&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-70" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;D&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1089.34" y="2804.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h3HyLmKFvtXmSbTEe14R-71" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -1049,7 +1049,7 @@
         <mxCell id="h3HyLmKFvtXmSbTEe14R-76" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.515;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="h3HyLmKFvtXmSbTEe14R-74" target="h3HyLmKFvtXmSbTEe14R-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="h3HyLmKFvtXmSbTEe14R-77" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;totalDeAlimentos &amp;lt;- totalDeAlimentos + valorUnidade * quantidade&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="h3HyLmKFvtXmSbTEe14R-77" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;totalEmPadaria &amp;lt;- totalEmPadaria&amp;nbsp;+ valorUnidade * quantidade&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1448.3400000000001" y="1578.5" width="330.5" height="30" as="geometry" />
         </mxCell>
       </root>
