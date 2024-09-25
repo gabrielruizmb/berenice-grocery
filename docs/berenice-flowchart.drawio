@@ -1571,9 +1571,6 @@
         <mxCell id="PFwsmDLHOruaY-lUztDI-10" value="totalEmLimpeza &amp;lt;- 0, totalEmAlimentos &amp;lt;- 0, totalEmPadaria &amp;lt;- 0" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1666.66" y="377" width="487.23" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eE0TCT90ce00Bp5PJLh6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fcO4eRgJYQ2Qzg-tuo2n-79" target="fcO4eRgJYQ2Qzg-tuo2n-79">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
