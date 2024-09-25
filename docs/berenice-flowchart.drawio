@@ -16,13 +16,8 @@
         <mxCell id="-wwK6uYsUFuTY2tYCcgX-10" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=west;" parent="1" vertex="1">
           <mxGeometry x="1451.28" y="-440.75" width="340" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-86" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="fcO4eRgJYQ2Qzg-tuo2n-79" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1907.7699999999995" y="346.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-79" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1779.1800000000003" y="190" width="257.18" height="110" as="geometry" />
+          <mxGeometry x="1660" y="190" width="500" height="300" as="geometry" />
         </mxCell>
         <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-45" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1191.2999999999997" y="-275.75" width="168.7" height="60" as="geometry" />
@@ -1302,8 +1297,8 @@
         <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-76" value="I. Finalizar compra" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1830.27" y="-104" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-78" value="vendasFeitas &amp;lt;- vendasFeitas + 1&lt;div&gt;totalDoFaturamento &amp;lt;- totalDoFaturamento + totalComDesconto&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="1783.02" y="200" width="249.51" height="90" as="geometry" />
+        <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-78" value="vendasFeitas &amp;lt;- vendasFeitas + 1&lt;div&gt;&lt;br&gt;&lt;div&gt;totalDoFaturamento &amp;lt;- totalDoFaturamento + totalComDesconto&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1672.77" y="190" width="470" height="101" as="geometry" />
         </mxCell>
         <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-81" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="1832.77" y="-28.25" width="150" height="44.5" as="geometry" />
@@ -1317,10 +1312,10 @@
           <mxGeometry x="1852.77" y="-20.75" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-84" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1877.7699999999995" y="346.5" width="60" height="60" as="geometry" />
+          <mxGeometry x="1882.2799999999995" y="550" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fcO4eRgJYQ2Qzg-tuo2n-85" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;A&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="1877.7699999999995" y="361.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1882.2799999999995" y="565" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-wwK6uYsUFuTY2tYCcgX-1" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1182.0299999999997" y="-447.25" width="220" height="93" as="geometry" />
@@ -1560,6 +1555,21 @@
         </mxCell>
         <mxCell id="PFwsmDLHOruaY-lUztDI-6" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;faturamentoPadaria: float&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-1354.49" y="-635" width="192" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PFwsmDLHOruaY-lUztDI-7" value="faturamentoLimpeza &amp;lt;- faturamentoLimpeza + totalEmLimpeza" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1672.77" y="280" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PFwsmDLHOruaY-lUztDI-8" value="faturamentoAlimentos &amp;lt;- faturamentoAlimentos + totalEmAlimentos" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1672.77" y="317" width="487.23" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PFwsmDLHOruaY-lUztDI-9" value="faturamentoPadaria &amp;lt;- faturamentoPadaria&amp;nbsp;+ totalEmPadaria" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1664.16" y="347" width="487.23" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PFwsmDLHOruaY-lUztDI-10" value="totalEmLimpeza &amp;lt;- 0, totalEmAlimentos &amp;lt;- 0, totalEmPadaria &amp;lt;- 0" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1666.66" y="377" width="487.23" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PFwsmDLHOruaY-lUztDI-11" value="totalDaCompra &amp;lt;- 0, totalComDesconto &amp;lt;- 0" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1664.16" y="407" width="487.23" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
