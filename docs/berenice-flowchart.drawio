@@ -1,9 +1,17 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="24.7.16">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="3715" dy="2828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3964" dy="2963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="MtYJzgujj3OL7VdnlWOX-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="MtYJzgujj3OL7VdnlWOX-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1268.2857142857142" y="-1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtYJzgujj3OL7VdnlWOX-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1648.08" y="-1590" width="760" height="250" as="geometry" />
+        </mxCell>
         <mxCell id="-wwK6uYsUFuTY2tYCcgX-29" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=west;" parent="1" vertex="1">
           <mxGeometry x="1902.2599999999998" y="-970.75" width="152.4" height="30" as="geometry" />
         </mxCell>
@@ -87,21 +95,21 @@
           <mxGeometry x="-1634.3" y="-893" width="160" height="483" as="geometry" />
         </mxCell>
         <mxCell id="64TBRrdWg9vruEVqZ3hl-2" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;Fluxograma da mercearia da Berenice&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="-1092.4900000000002" y="-1269.25" width="170" height="30" as="geometry" />
+          <mxGeometry x="-1368.0800000000002" y="-1750" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uxmXj8jSHQ4GdBaXvY8T-1" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=west;" parent="1" vertex="1">
           <mxGeometry x="-1370.05" y="-449" width="205.5" height="214" as="geometry" />
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="uxmXj8jSHQ4GdBaXvY8T-2" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1007.1" y="-1109.25" as="targetPoint" />
+            <mxPoint x="-1282.69" y="-1590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uxmXj8jSHQ4GdBaXvY8T-2" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-1065.4900000000002" y="-1208.25" width="117" height="50" as="geometry" />
+          <mxGeometry x="-1341.0800000000002" y="-1689" width="117" height="50" as="geometry" />
         </mxCell>
         <mxCell id="uxmXj8jSHQ4GdBaXvY8T-6" value="Início" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="-1037.4900000000002" y="-1199.25" width="60" height="30" as="geometry" />
+          <mxGeometry x="-1313.0800000000002" y="-1680" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uxmXj8jSHQ4GdBaXvY8T-8" value="Menu principal" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-1318.8" y="-439" width="110" height="30" as="geometry" />
@@ -1726,22 +1734,22 @@
           <mxGeometry x="1984.4499999999994" y="1304" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="MtYJzgujj3OL7VdnlWOX-1" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;char produtosLimpeza[20][4] = {&quot;Detergente&quot;, &quot;Sabão em pó(1Kg)&quot;, &quot;Esponja&quot;, &quot;Amaciante(1Lt)&quot;};&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1580" y="-1590" width="730" height="30" as="geometry" />
+          <mxGeometry x="-1648.08" y="-1579" width="730" height="30" as="geometry" />
         </mxCell>
         <mxCell id="MtYJzgujj3OL7VdnlWOX-2" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;char produtosAlimentos[20][5] = {&quot;Café&quot;, &quot;Leite(cx)&quot;, &quot;Arroz(1Kg)&quot;, &quot;Feijão preto(1Kg)&quot;, &quot;Açucar(1Kg)&quot;};&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1580.37" y="-1510" width="760" height="30" as="geometry" />
+          <mxGeometry x="-1648.4499999999998" y="-1499" width="760" height="30" as="geometry" />
         </mxCell>
         <mxCell id="MtYJzgujj3OL7VdnlWOX-3" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;char produtosPadaria[20][4] = {&quot;Pão de forma&quot;, &quot;Pão integral&quot;, &quot;Pão francês(Unid)&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bvertical-align%3A%20inherit%3B%26quot%3B%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bvertical-align%3A%20inherit%3B%26quot%3B%26gt%3Bchar%20produtosAlimentos%5B20%5D%5B5%5D%20%3D%20%7B%26quot%3BCaf%C3%A9%26quot%3B%2C%20%26quot%3BLeite(cx)%26quot%3B%2C%20%26quot%3BArroz(1Kg)%26quot%3B%2C%20%26quot%3BFeij%C3%A3o%20preto(1Kg)%26quot%3B%2C%20%26quot%3BA%C3%A7ucar(1Kg)%26quot%3B%7D%3B%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22text%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3BfontSize%3D16%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-1580.37%22%20y%3D%22-1510%22%20width%3D%22760%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bvertical-align%3A%20inherit%3B%26quot%3B%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bvertical-align%3A%20inherit%3B%26quot%3B%26gt%3Bchar%20produtosAlimentos%5B20%5D%5B5%5D%20%3D%20%7B%26quot%3BCaf%C3%A9%26quot%3B%2C%20%26quot%3BLeite(cx)%26quot%3B%2C%20%26quot%3BArroz(1Kg)%26quot%3B%2C%20%26quot%3BFeij%C3%A3o%20preto(1Kg)%26quot%3B%2C%20%26quot%3BA%C3%A7ucar(1Kg)%26quot%3B%7D%3B%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22text%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3BfontSize%3D16%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-1580.37%22%20y%3D%22-1510%22%20width%3D%22760%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&quot;, &quot;Sonho&quot;};&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1640.37" y="-1430" width="820" height="30" as="geometry" />
+          <mxGeometry x="-1708.4499999999998" y="-1419" width="820" height="30" as="geometry" />
         </mxCell>
         <mxCell id="MtYJzgujj3OL7VdnlWOX-4" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;int precosLimpeza[4] = {1.99, 8.99, 1.50, 15.00}&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1754.92" y="-1561" width="730" height="30" as="geometry" />
+          <mxGeometry x="-1823" y="-1550" width="730" height="30" as="geometry" />
         </mxCell>
         <mxCell id="MtYJzgujj3OL7VdnlWOX-5" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;int precosAlimentos[5] = {19.99, 5.90, 4.50, 8.00, 5.00}&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1732.19" y="-1480" width="730" height="30" as="geometry" />
+          <mxGeometry x="-1800.27" y="-1469" width="730" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="MtYJzgujj3OL7VdnlWOX-6" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;int precosPadaria[4] = {9.50, 8.99, 1.50, 15.00}&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1755.92" y="-1400" width="730" height="30" as="geometry" />
+        <mxCell id="MtYJzgujj3OL7VdnlWOX-6" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;int precosPadaria[4] = {9.50, 8.99, 1.90, 8.50}&lt;/font&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1830" y="-1389" width="730" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
