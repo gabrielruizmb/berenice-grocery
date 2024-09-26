@@ -1613,7 +1613,7 @@
           <mxGeometry x="1852.0899999999995" y="496" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-72" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=west;" vertex="1" parent="1">
-          <mxGeometry x="1641.15" y="621" width="481.87" height="269" as="geometry" />
+          <mxGeometry x="1641.15" y="621" width="481.87" height="329" as="geometry" />
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-74" value="Fechamento de caixa" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1669.11" y="631" width="173.91" height="29" as="geometry" />
@@ -1635,6 +1635,12 @@
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-80" value="c) Faturamento em padaria: [faturamentoPadaria]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1686" y="824" width="390.19" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-81" value="4. Voltar ao menu" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1678.15" y="869.5" width="149.59" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-82" value="5. Sair" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1677.15" y="902" width="71.85" height="29" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
