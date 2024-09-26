@@ -1612,6 +1612,9 @@
         <mxCell id="eE0TCT90ce00Bp5PJLh6-71" value="F" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1852.0899999999995" y="496" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eE0TCT90ce00Bp5PJLh6-72" target="eE0TCT90ce00Bp5PJLh6-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-72" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=west;" vertex="1" parent="1">
           <mxGeometry x="1641.15" y="621" width="481.87" height="329" as="geometry" />
         </mxCell>
@@ -1641,6 +1644,12 @@
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-82" value="5. Sair" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1677.15" y="902" width="71.85" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-83" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1792.09" y="1027" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-85" value="opcaoEscolhida" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1807.3" y="1040.5" width="149.59" height="29" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
