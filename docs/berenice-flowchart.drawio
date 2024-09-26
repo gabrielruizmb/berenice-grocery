@@ -1582,25 +1582,25 @@
         <mxCell id="eE0TCT90ce00Bp5PJLh6-62" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="735.06" y="1194.5" width="174.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="eE0TCT90ce00Bp5PJLh6-63" value="valorUnidade &amp;lt;- precosAlimentos[0]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-63" value="valorUnidade &amp;lt;- precosPadaria[0]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="732.81" y="1202" width="176.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-64" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="736.53" y="1354.5" width="174.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="eE0TCT90ce00Bp5PJLh6-65" value="valorUnidade &amp;lt;- precosAlimentos[1]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-65" value="valorUnidade &amp;lt;- precosPadaria[1]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="734.28" y="1362" width="176.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-66" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="736.93" y="1515.5" width="174.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="eE0TCT90ce00Bp5PJLh6-67" value="valorUnidade &amp;lt;- precosAlimentos[2]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-67" value="valorUnidade &amp;lt;- precosPadaria[2]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="734.68" y="1523" width="176.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eE0TCT90ce00Bp5PJLh6-68" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="736.93" y="1685.5" width="174.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="eE0TCT90ce00Bp5PJLh6-69" value="valorUnidade &amp;lt;- precosAlimentos[3]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="eE0TCT90ce00Bp5PJLh6-69" value="valorUnidade &amp;lt;- precosPadaria[3]" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="734.68" y="1693" width="176.6" height="30" as="geometry" />
         </mxCell>
       </root>
