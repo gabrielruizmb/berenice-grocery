@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 void limparTela();
 void menu();
@@ -15,8 +16,11 @@ typedef struct
     char bairro[50];
     char rua[50];
     char numero[10];
-    char numeroDeTelefone[15]; 
+    char telefone[15]; 
 } cliente;
+
+cliente clientes[20];
+int clientesCadastrados = 0;
 
 int main()
 {
@@ -63,7 +67,7 @@ void menuCadastros()
         scanf("%d", &escolha);
         switch(escolha)
         {
-	    case 12: cadastrarClientes();    break;
+	    case 11: cadastrarClientes();    break;
             case 13: menu();		     break;
 
 	    default: 
@@ -75,7 +79,45 @@ void menuCadastros()
 
 void cadastrarClientes()
 {
+    limparTela();
     
+    printf("Informe o código do cliente: ");
+    scanf("%d", &clientes[clientesCadastrados].codigo);
+
+    printf("Informe o nome do cliente: ");
+    limparBuffer();
+    fgets(clientes[clientesCadastrados].nome, 50, stdin);
+
+    printf("Informe o nome social do cliente: ");
+    limparBuffer();
+    fgets(clientes[clientesCadastrados].nomeSocial, 50, stdin);
+
+    printf("Informe o cpf/cpnj: ");
+    limparBuffer();
+    fgets(clientes[clientesCadastrados].cpfOuCnpj, 19, stdin);
+
+    printf("Informe o bairro: ");
+    limparBuffer();
+    fgets(clientes[clientesCadastrados].bairro, 50, stdin);
+
+    printf("Informe a rua: ");
+    limparBuffer();
+    fgets(clientes[clientesCadastrados].rua, 50, stdin);
+
+    printf("Informe o número: ");
+    limparBuffer();
+    fgets(clientes[clientesCadastrados].numero, 10, stdin);
+
+    printf("Informe o telefone: ");
+    limparBuffer();
+    scanf("%50[^\n]", clientes[clientesCadastrados].telefone);
+  
+    printf("Cliente cadastrado com sucesso! Pressione qualquer tecla para continuar. \n");
+    clientesCadastrados++;
+
+    limparBuffer();
+    getchar();
+    menu();
 }
 
 void limparTela()
@@ -84,6 +126,17 @@ void limparTela()
 	system("clear");
     #elif _WIN32
 	system("cls");
+    #else
+
+    #endif
+}
+
+void limparBuffer()
+{
+    #ifdef __linux__
+	__fpurge(stdin);
+    #elif _WIN32
+	fflush(stdin);
     #else
 
     #endif
