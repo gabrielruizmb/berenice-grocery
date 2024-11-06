@@ -1,11 +1,12 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include<stdio.h>     // Biblioteca para usarmos scanf/printf...
+#include<stdlib.h>    // Biblioteca para usarmos a função de limpar a tela.
+#include<string.h>    // Biblioteca para usarmos string.
 
-void limparTela();
-void menu();
-void menuCadastros();
-void cadastrarClientes();
+void limparTela();           // função que limpa a tela;
+void menu();		     // função que exibe o menu principal.
+void menuCadastros();        // função que exibe o menu de cadastros.
+void cadastrarClientes();    // função para cadastrar novo cliente.
+void limparBuffer();	     // função que limpa o buffer para depois usarmos fgets, getchar...
 
 typedef struct
 {
@@ -32,9 +33,9 @@ int main()
 void menu()
 {
     int escolha = 0;
-    
-    limparTela();
 
+    limparTela();
+    
     printf("---MENU PRINCIPAL--- \n");
     printf(" 1.Cadastros \n 2.Vendas \n 3.Abertura de Caixa \n 4.Fechamento de caixa \n 5.Relatórios \n 6.Sair \n");
     
@@ -88,7 +89,7 @@ void cadastrarClientes()
     limparBuffer();
     fgets(clientes[clientesCadastrados].nome, 50, stdin);
 
-    printf("Informe o nome social do cliente: ");
+    printf("Informe o nome social do cliente(deixe em branco para nenhum): ");
     limparBuffer();
     fgets(clientes[clientesCadastrados].nomeSocial, 50, stdin);
 
@@ -122,8 +123,11 @@ void cadastrarClientes()
 
 void limparTela()
 {
+    // Se o sistema operacional usado for Linux, execute isto:
     #ifdef __linux__
 	system("clear");
+
+    // Se for Windows, execute isto:
     #elif _WIN32
 	system("cls");
     #else
@@ -133,6 +137,7 @@ void limparTela()
 
 void limparBuffer()
 {
+    // A mesma lógica da função limparTela(), mas desta vez com a função de limpar o Buffer.
     #ifdef __linux__
 	__fpurge(stdin);
     #elif _WIN32
