@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include<stdbool.h>
 #include<locale.h>
 #define tamanho 10
@@ -26,7 +27,9 @@ void exibirLista();
 bool inserirProdutoNaLista();
 void inserirProduto();
 void limparTela();
+void limparBuffer();
 void menuCadastros();
+void menuRelatorios();
 
 int main()
 {
@@ -50,6 +53,18 @@ void limparTela()
     #endif
 }
 
+void limparBuffer()
+{
+    // A mesma lógica da função limparTela(), mas desta vez com a função de limpar o Buffer.
+    #ifdef __linux__
+	__fpurge(stdin);
+
+    #elif _WIN32
+	fflush(stdin);
+
+    #endif
+}
+
 void menuPrincipal(Lista *lista)
 {
     limparTela();
@@ -58,7 +73,7 @@ void menuPrincipal(Lista *lista)
 
     printf("*** Mercearia da Berênice ***\n");
     printf("~Menu principal~\n\n");
-    printf("1.Inserir produto\n2.Sair\n\n");
+    printf("1.Inserir produto\n5.Relatórios\n6.Sair\n\n");
     printf("Escolha uma opção: ");
     
     while(true)
@@ -66,9 +81,9 @@ void menuPrincipal(Lista *lista)
         scanf("%d", &escolha);
 	switch(escolha)
 	{
-	    case 1: menuCadastros(lista);    break;
- 	    case 2: exit(0);		    break;
-
+	    case 1: menuCadastros(lista);     break;
+            case 5: menuRelatorios(lista);    break;
+	    case 6: exit(0);		      break;
 	    default: printf("Opção inválida! escolha outra opção: ");
 	}
     }
@@ -102,30 +117,46 @@ void inserirProduto(Lista *lista)
     int posicao = 0, escolha = 0;
     Produto produto;
     
-    while(escolha!=2)
-    {
-        limparTela();
-        printf("*** Mercearia da Berênice ***\n");
-        printf("~Cadastrar novo produto~\n\n");
+    limparTela();
+    printf("*** Mercearia da Berênice ***\n");
+    printf("~Cadastrar novo produto~\n\n");
     
-        printf("Informe a chave do produto: ");
-        scanf("%d", &produto.chave);
+    printf("Informe a chave do produto: ");
+    scanf("%d", &produto.chave);
 
-        printf("Informe o preço do produto: ");
-        scanf("%f", &produto.preco);
+    printf("Informe o preço do produto: ");
+    scanf("%f", &produto.preco);
 
-        if(inserirProdutoNaLista(lista, produto, posicao) == false)
-	    printf("\nEsta chave já está sendo usada!\n\n");
-        else 
-	    printf("\nProduto inserido!\n\n");
+    if(inserirProdutoNaLista(lista, produto, posicao) == false)
+	printf("\nEsta chave já está sendo usada! Escolha outra chave.\n\n");
+    else 
+	printf("\nProduto inserido!\n\n");
+	
+    printf("Pressione a tecla Enter para voltar ao menu de cadastros. . .");
+    limparBuffer();
+    getchar();
+    menuCadastros(lista);
+}
 
-	printf("1.Cadastrar outro produto\n2.Voltar\n\nEscolha uma opção: ");
-	scanf("%d", &escolha);
+void menuRelatorios(Lista *lista)
+{
+    int escolha = 0;
 
-	while(escolha < 1 || escolha > 2)
+    limparTela();
+    printf("***Mercearia da Berênice***\n");
+    printf("~Menu de relatórios~\n\n");
+    printf("2.Listar produtos\n4.Voltar ao menu principal\n\n");
+    printf("Escolha uma opção: ");
+    while(true)
+    {
+        scanf("%d", &escolha);
+	switch(escolha)
 	{
-	    printf("Opção inválida! escolha 1 ou 2: ");
+	    case 2:    			     break;
+	    case 4: menuPrincipal(lista);    break;
+	    default: printf("Opção inválida! Escolha uma opção: ");
 	}
+    }
 }
 
 void inicializarLista(Lista *lista)
