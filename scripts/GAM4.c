@@ -23,7 +23,7 @@ void inicializarLista();
 void menuPrincipal();
 int buscarPosicaoPorChave();
 int contarRegistros();
-void exibirLista();
+void exibirListaDeProdutos();
 bool inserirProdutoNaLista();
 void inserirProduto();
 void limparTela();
@@ -107,7 +107,7 @@ void menuCadastros(Lista *lista)
 	{
 	    case 3: inserirProduto(lista);    break;
 	    case 4: menuPrincipal(lista);     break;
-	    default: printf("Opção inválida! escolha outra opção: ");    break;
+	    default: printf("Opção inválida! escolha outra opção: ");
 	}
     }
 }
@@ -152,8 +152,8 @@ void menuRelatorios(Lista *lista)
         scanf("%d", &escolha);
 	switch(escolha)
 	{
-	    case 2:    			     break;
-	    case 4: menuPrincipal(lista);    break;
+	    case 2: exibirListaDeProdutos(lista);    break;
+	    case 4: menuPrincipal(lista);    	     break;
 	    default: printf("Opção inválida! Escolha uma opção: ");
 	}
     }
@@ -185,11 +185,11 @@ int contarRegistros(Lista *lista)
     return lista->quantidade;
 }
 
-void exibirLista(Lista *lista)
+void exibirListaDeProdutos(Lista *lista)
 {
     for(int i = 0; i < lista->quantidade; i++)
     {
-        printf("%d %f", lista->produtos[i].chave, lista->produtos[i].preco);
+        printf("Código: %d\nPreço: %f\n", lista->produtos[i].chave, lista->produtos[i].preco);
     }
 }
 
@@ -209,10 +209,13 @@ bool inserirProdutoNaLista(Lista *lista, Produto produto, int posicao)
 
     for(int j = lista->quantidade; j > posicao; j--)
     {
-        lista->produtos[j] = lista->produtos[j--];
+        lista->produtos[j] = lista->produtos[j-1];
     }
     lista->produtos[posicao] = produto;
     lista->quantidade++;
+    
+    //0 1 2 3 4    0 1 2 3 4 5
+    //A B C D E    X A B C D E
 
     return true;    
 }
