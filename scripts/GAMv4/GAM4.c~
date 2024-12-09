@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include<locale.h>
 #include<stdbool.h>
 
@@ -10,6 +11,7 @@ typedef struct
 } Produto;
 
 void limparTela();
+void limparBuffer();
 void menuPrincipal();
 void menuCadastros();
 void cadastrarProduto();
@@ -32,6 +34,15 @@ void limparTela()
 	system("cls");
     #elif __linux__
 	system("clear");
+    #endif
+}
+
+void limparBuffer()
+{
+    #ifdef _WIN32
+	fflush(stdin);
+    #elif __linux__
+	__fpurge(stdin);
     #endif
 }
 
@@ -138,10 +149,15 @@ void relatorioDosProdutos()
     printf("%d produtos\n\n", tamanho);
     for(int i = 0; i < tamanho; i++)
     {
-        printf("Produto: %d\n", produtos[i].codigo);
+        printf("Produto %d\n", produtos[i].codigo);
         printf("Preço: %.2f\n\n", produtos[i].preco);
     }
     free(produtos);
+    
+    printf("Pressione Enter para voltar . . .");
+    limparBuffer();
+    getchar();
+    menuPrincipal();
 }
 
 void funcao()

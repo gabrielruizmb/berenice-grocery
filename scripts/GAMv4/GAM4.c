@@ -10,6 +10,7 @@ typedef struct
 } Produto;
 
 void limparTela();
+void limparBuffer();
 void menuPrincipal();
 void menuCadastros();
 void cadastrarProduto();
@@ -32,6 +33,15 @@ void limparTela()
 	system("cls");
     #elif __linux__
 	system("clear");
+    #endif
+}
+
+void limparBuffer()
+{
+    #ifdef _WIN32
+	fflush(stdin);
+    #elif __linux__
+	__fpurge(stdin);
     #endif
 }
 
@@ -142,6 +152,11 @@ void relatorioDosProdutos()
         printf("Preço: %.2f\n\n", produtos[i].preco);
     }
     free(produtos);
+    
+    printf("Pressione Enter para voltar . . .");
+    limparBuffer();
+    getchar();
+    menuPrincipal();
 }
 
 void funcao()
