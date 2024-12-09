@@ -111,8 +111,7 @@ void funcao()
     Produto *produtos = (Produto *) calloc(tamanho, sizeof(produto));
     
     produtos[tamanho] = produto;
-    tamanho++;
-
+    
     arquivoProdutos = fopen("arquivos\\produtos.bin", "wb"); 
     fwrite(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
     fwrite(produtos, sizeof(produto), 1, arquivoProdutos);
