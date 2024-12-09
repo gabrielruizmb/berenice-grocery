@@ -127,6 +127,11 @@ void cadastrarProduto()
 
     free(arquivoProdutos);
     free(produtos);
+
+    printf("\nProduto cadastrado!\nPressione Enter para voltar . . .");
+    limparBuffer();
+    getchar();
+    menuCadastros();
 }
 
 void relatorioDosProdutos()
