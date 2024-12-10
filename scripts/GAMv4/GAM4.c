@@ -101,10 +101,15 @@ void cadastrarProduto()
     limparTela();
 
     int tamanho = 0;
-    FILE *arquivoProdutos = fopen("arquivos\\produtos.bin", "rb");
-    Produto *produtos;
     Produto produto;
-
+    Produto *produtos;
+    FILE *arquivoProdutos = fopen("arquivos/produtos.bin", "rb");
+    
+    if(arquivoProdutos == NULL)
+    {
+	arquivoProdutos = fopen("arquivos/produtos.bin", "wb+");
+    }
+    
     fread(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
     produtos = (Produto *) calloc(tamanho, sizeof(Produto));
     fread(produtos, sizeof(Produto), tamanho, arquivoProdutos);
@@ -120,12 +125,11 @@ void cadastrarProduto()
     produtos[tamanho] = produto;
     tamanho++;
 
-    arquivoProdutos = fopen("arquivos\\produtos.bin", "wb");
+    arquivoProdutos = fopen("arquivos/produtos.bin", "wb");
     fwrite(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
     fwrite(produtos, sizeof(Produto), tamanho, arquivoProdutos);
     fclose(arquivoProdutos);
 
-    free(arquivoProdutos);
     free(produtos);
 
     printf("\nProduto cadastrado!\nPressione Enter para voltar . . .");
@@ -137,20 +141,24 @@ void cadastrarProduto()
 void relatorioDosProdutos()
 {
     limparTela();
-
-    FILE *arquivoProdutos = fopen("arquivos\\produtos.bin", "rb");
+    
     int tamanho = 0;
     Produto *produtos;
+    FILE *arquivoProdutos = fopen("arquivos/produtos.bin", "rb");
+
+    if(arquivoProdutos == NULL)
+    {
+	arquivoProdutos = fopen("arquivos/produtos.bin", "wb+");
+    }
 
     fread(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
     produtos = (Produto *) calloc(tamanho, sizeof(Produto));
     fread(produtos, sizeof(Produto), tamanho, arquivoProdutos);
     fclose(arquivoProdutos);
-    free(arquivoProdutos);
 
     printf("***Mercearia da Berênice***\n");
     printf("~Lista de produtos~\n\n");
-    printf("%d produtos\n\n", tamanho);
+    printf("%d produto(s)\n\n", tamanho);
     for(int i = 0; i < tamanho; i++)
     {
         printf("Produto %d\n", produtos[i].codigo);
