@@ -2,13 +2,14 @@
 #include<stdlib.h> // Biblioteca para usarmos outras funções prontas...
 #include<locale.h> // Para usar setlocale() e escolher o idioma do programa.
 #include<stdbool.h> // Biblioteca para usarmos dado booleano, true ou false.
-#include<string.h>
 
 typedef struct
 {
     char nome[50];
     int codigo;
-    float preco;
+    int estoque;
+    float precoCompra;
+    float precoVenda;
 } Produto;
 
 void limparTela();   // Estas duas funções verificam se o sistema operacional é
@@ -124,9 +125,13 @@ void cadastrarProduto()
     printf("Nome do produto: ");
     limparBuffer();
     scanf("%50[^\n]", produto.nome);
-    printf("Preço do produto: ");
-    scanf("%f", &produto.preco);
- 
+    printf("Preço de compra: ");
+    scanf("%f", &produto.precoCompra);
+    printf("Preço de venda: ");
+    scanf("%f", &produto.precoVenda);
+    printf("Quantidade em estoque: ");
+    scanf("%d", &produto.estoque);
+
     if(codigoUnico(produto.codigo, tamanho, produtos) == false)
     {
         printf("\n\nEste código de produto já está sendo usado!\n");
@@ -191,8 +196,12 @@ void relatorioDosProdutos()
     {
         printf("Produto %d\n", produtos[i].codigo);
 	printf("Nome: %s\n", produtos[i].nome);
-        printf("Preço: %.2f\n\n", produtos[i].preco);
+        printf("Preço de compra: %.2f\n", produtos[i].precoCompra);
+        printf("Preço de venda: %.2f\n", produtos[i].precoVenda);
+	printf("Quantidade em estoque: %d\n\n", produtos[i].estoque);
+	printf("**********************************************\n\n");
     }
+
     free(produtos);
     
     printf("Pressione Enter para voltar . . .");
