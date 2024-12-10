@@ -103,15 +103,15 @@ void cadastrarProduto()
     int tamanho = 0;
     Produto produto;
     Produto *produtos;
-    FILE *arquivoProdutos = fopen("arquivos/produtos.bin", "rb");
+    FILE *arquivoProdutos = fopen("produtos.bin", "rb");
     
     if(arquivoProdutos == NULL)
     {
-	arquivoProdutos = fopen("arquivos/produtos.bin", "wb+");
+	arquivoProdutos = fopen("produtos.bin", "wb+");
     }
     
     fread(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
-    produtos = (Produto *) calloc(tamanho, sizeof(Produto));
+    produtos = (Produto *) calloc(tamanho+1, sizeof(Produto));
     fread(produtos, sizeof(Produto), tamanho, arquivoProdutos);
     fclose(arquivoProdutos);
 
@@ -125,7 +125,7 @@ void cadastrarProduto()
     produtos[tamanho] = produto;
     tamanho++;
 
-    arquivoProdutos = fopen("arquivos/produtos.bin", "wb");
+    arquivoProdutos = fopen("produtos.bin", "wb");
     fwrite(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
     fwrite(produtos, sizeof(Produto), tamanho, arquivoProdutos);
     fclose(arquivoProdutos);
@@ -144,11 +144,11 @@ void relatorioDosProdutos()
     
     int tamanho = 0;
     Produto *produtos;
-    FILE *arquivoProdutos = fopen("arquivos/produtos.bin", "rb");
+    FILE *arquivoProdutos = fopen("produtos.bin", "rb");
 
     if(arquivoProdutos == NULL)
     {
-	arquivoProdutos = fopen("arquivos/produtos.bin", "wb+");
+	arquivoProdutos = fopen("produtos.bin", "wb+");
     }
 
     fread(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
