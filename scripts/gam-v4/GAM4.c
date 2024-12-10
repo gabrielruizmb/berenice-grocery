@@ -1,23 +1,24 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<locale.h>
-#include<stdbool.h>
+#include<stdio.h> // Biblioteca para poder usar printf(), scanf() e outros...
+#include<stdlib.h> // Biblioteca para usarmos outras funções prontas...
+#include<locale.h> // Para usar setlocale() e escolher o idioma do programa.
+#include<stdbool.h> // Biblioteca para usarmos dado booleano, true ou false.
+#include<string.h>
 
 typedef struct
 {
+    char nome[50];
     int codigo;
     float preco;
 } Produto;
 
-void limparTela();
-void limparBuffer();
+void limparTela();   // Estas duas funções verificam se o sistema operacional é
+void limparBuffer(); // Windows ou linux, e usam as funções próprias para ele.
 void menuPrincipal();
 void menuCadastros();
 void cadastrarProduto();
-bool codigoUnico();
+bool codigoUnico(); // Verifica se o código do produto já está sendo usado.
 void menuRelatorios();
 void relatorioDosProdutos();
-void funcao();
 
 int main()
 {
@@ -62,9 +63,9 @@ void menuPrincipal()
         scanf("%d", &escolha);
 	switch(escolha)
 	{
-	    case 1: menuCadastros();     break;
+	    case 1: menuCadastros();           break;
 	    case 5: relatorioDosProdutos();    break;
- 	    case 6: exit(0);             break;
+ 	    case 6: exit(0);                   break;
 
 	    default: printf("\nOpção inválida! escolha outra opção: ");
 	}
@@ -120,6 +121,9 @@ void cadastrarProduto()
     printf("~Cadastrar novo produto~\n\n");
     printf("Código do produto: ");
     scanf("%d", &produto.codigo);
+    printf("Nome do produto: ");
+    limparBuffer();
+    scanf("%50[^\n]", produto.nome);
     printf("Preço do produto: ");
     scanf("%f", &produto.preco);
  
@@ -186,6 +190,7 @@ void relatorioDosProdutos()
     for(int i = 0; i < tamanho; i++)
     {
         printf("Produto %d\n", produtos[i].codigo);
+	printf("Nome: %s\n", produtos[i].nome);
         printf("Preço: %.2f\n\n", produtos[i].preco);
     }
     free(produtos);
@@ -196,40 +201,3 @@ void relatorioDosProdutos()
     menuPrincipal();
 }
 
-void funcao()
-{
-    int tamanho = 0;
-    Produto produto;
-    produto.codigo = 101;
-    produto.preco = 1.50;
-
-    FILE *arquivoProdutos;
-    Produto *produtos = (Produto *) calloc(tamanho, sizeof(produto));
-    
-    produtos[tamanho] = produto;
-    tamanho++;
-
-    arquivoProdutos = fopen("arquivos\\produtos.bin", "wb"); 
-    fwrite(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
-    fwrite(produtos, sizeof(produto), 1, arquivoProdutos);
-    fclose(arquivoProdutos);
-    free(arquivoProdutos);
-    
-    tamanho = 100;
-    produto.codigo = 0;
-    produto.preco = 0;
-    
-    arquivoProdutos = fopen("arquivos\\produtos.bin", "rb");
-    fread(&tamanho, sizeof(tamanho), 1, arquivoProdutos);
-    fread(produtos, sizeof(produto), 1, arquivoProdutos);
-    fclose(arquivoProdutos);
-    free(arquivoProdutos);
-
-    printf("Tamanho da lista de produtos: %d\n\n", tamanho);
-    for(int i = 0; i < tamanho; i++)
-    {
-        printf("Código: %d\n", produtos[i].codigo);
-	printf("Preço: %.2f\n", produtos[i].preco);
-    }
-    free(produtos);
-}
