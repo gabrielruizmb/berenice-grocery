@@ -16,10 +16,13 @@ void limparTela();   // Estas duas funções verificam se o sistema operacional 
 void limparBuffer(); // Windows ou linux, e usam as funções próprias para ele.
 void menuPrincipal();
 void menuCadastros();
+void menuAbrirCaixa();
+void abrirCaixa();
 void cadastrarProduto();
 bool codigoUnico(); // Verifica se o código do produto já está sendo usado.
 void menuRelatorios();
 void relatorioDosProdutos();
+void exibirProdutos();
 
 int main()
 {
@@ -56,7 +59,7 @@ void menuPrincipal()
 
     printf("***Mercearia da Berênice***\n");
     printf("~Menu Principal~\n\n");
-    printf("1.Cadastros\n5.Relatórios\n6.Sair\n\n");
+    printf("1.Cadastros\n3.Abrir caixa\n5.Relatórios\n6.Sair\n\n");
     printf("Escolha uma opção: ");
     
     while(true)
@@ -64,9 +67,10 @@ void menuPrincipal()
         scanf("%d", &escolha);
 	switch(escolha)
 	{
-	    case 1: menuCadastros();           break;
-	    case 5: relatorioDosProdutos();    break;
- 	    case 6: exit(0);                   break;
+	    case 1: menuCadastros();     break;
+	    case 3: menuAbrirCaixa();    break;
+	    case 5: menuRelatorios();    break;
+ 	    case 6: exit(0);             break;
 
 	    default: printf("\nOpção inválida! escolha outra opção: ");
 	}
@@ -163,15 +167,109 @@ bool codigoUnico(int codigo, int tamanho, Produto *produtos)
     for(int i = 0; i < tamanho; i++)
     {
         if(codigo == produtos[i].codigo)
-	{
-	    free(produtos);
 	    return false;
-	}
     }   
     return true;
 }
 
+void vender()
+{
+    exibirProdutos();
+
+    printf("Escolha um produto: ");
+}
+
+void menuAbrirCaixa()
+{
+    int escolha = 0;
+    
+    limparTela();
+
+    printf("***Mercearia da Berênice***\n");
+    printf("~Abrir caixa~\n\n");
+    printf("1.Abrir caixa\n2.Voltar ao menu principal\n\n");
+    printf("Escolha uma opção: ");
+    
+    while(true)
+    {
+        scanf("%d", &escolha);
+	switch(escolha)
+	{
+	    case 1: abrirCaixa();       break;
+ 	    case 2: menuPrincipal();    break;
+
+	    default: printf("\nOpção inválida! escolha outra opção: ");
+	}
+    }
+}
+
+void abrirCaixa()
+{
+    float caixa = -1;
+    FILE *arquivoCaixa = fopen("arquivoCaixa.bin", "wb");
+
+    if(arquivoCaixa == NULL)
+    {
+        printf("\nErro ao abrir arquivo de caixa.\n");
+	printf("Pressione Enter para continuar . . .");
+	limparBuffer();
+	getchar();
+	menuPrincipal();
+    }
+
+    printf("\nValor em caixa: ");
+    while(caixa < 0)
+    {    
+	scanf("%f", &caixa);
+	if(caixa < 0)
+	{
+	    printf("Valor inválido! informe novamente: ");
+	}
+    }
+
+    fwrite(&caixa, sizeof(caixa), 1, arquivoCaixa);
+    fclose(arquivoCaixa);
+
+    printf("Caixa aberto com sucesso! Pressione Enter para voltar . . .");
+    limparBuffer();
+    getchar();
+    menuPrincipal();
+}
+
+void menuRelatorios()
+{
+    int escolha = 0;
+
+    limparTela();
+
+    printf("***Mercearia da Berênice***\n");
+    printf("~Menu de relatórios~\n\n");
+    printf("1.Listar produtos\n6.Voltar\n\n");
+    printf("Escolha uma opção: ");
+    
+    while(true)
+    {
+        scanf("%d", &escolha);
+	switch(escolha)
+	{
+	    case 1: relatorioDosProdutos();    break;
+ 	    case 6: menuPrincipal();          break;
+
+	    default: printf("\nOpção inválida! escolha outra opção: ");
+	}
+    }
+}
+
 void relatorioDosProdutos()
+{
+    exibirProdutos();
+    printf("Pressione Enter para voltar . . .");
+    limparBuffer();
+    getchar();
+    menuRelatorios();
+}
+
+void exibirProdutos()
 {
     limparTela();
     
@@ -202,11 +300,5 @@ void relatorioDosProdutos()
 	printf("**********************************************\n\n");
     }
 
-    free(produtos);
-    
-    printf("Pressione Enter para voltar . . .");
-    limparBuffer();
-    getchar();
-    menuPrincipal();
+    free(produtos);    
 }
-
